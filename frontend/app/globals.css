@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html {
+  @apply antialiased;
+}
+
+body {
+  @apply bg-nox-bg text-zinc-100 min-h-screen;
+  font-feature-settings: "rlig" 1, "calt" 1;
+}
+
+*:focus-visible {
+  @apply outline-none ring-2 ring-nox-accent ring-offset-2 ring-offset-nox-bg;
+}
